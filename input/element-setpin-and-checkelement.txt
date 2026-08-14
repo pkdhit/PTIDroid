@@ -1,0 +1,8 @@
+appPackage: io.element.android.x
+appActivity: io.element.android.x.MainActivity
+TaskDescription: Set a startup password for the application. After setting it, a control labeled "Change PIN code" appears on the current interface.
+---
+1. (action) resource-id: home_screen-settings, xpath: //*[@resource-id='home_screen-settings'], click
+2. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text = 'Screen lock'], click
+3. (action) resource-id: , xpath: //*[@class='android.widget.EditText'], send_keys_and_hide_keyboard, 2005
+4. (action) resource-id: , xpath: //*[@class='android.widget.EditText'], send_keys_and_hide_keyboard, 2005

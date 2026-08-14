@@ -1,0 +1,7 @@
+appPackage: com.fsck.k9
+appActivity: com.fsck.k9.activity.MessageHomeActivity
+---
+1. (action) resource-id: , xpath: //*[@class='android.widget.ImageButton' and @content-desc='Navigate up'], click
+2. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='Settings'], click
+3. (action) resource-id: com.fsck.k9:id/text, xpath: //*[@resource-id='com.fsck.k9:id/text' and @text='General settings'], click
+4. (assertion) check_elements_same_screen(driver, ['//android.widget.TextView[@resource-id="android:id/title" and @text="Privacy"]', '//android.widget.TextView[@resource-id="android:id/title" and @text="Network"]'])

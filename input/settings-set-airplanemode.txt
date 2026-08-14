@@ -1,0 +1,6 @@
+appPackage: com.android.settings
+appActivity: com.android.settings.Settings
+TaskDescription: Open the network settings interface, then turn on the Airplane mode, and finally check if "Airplane mode" is selected.
+---
+1. (action) resource-id: android:id/title, xpath: //android.widget.TextView[@resource-id="android:id/title" and @text="Network & internet"], click
+2. (action) resource-id: android:id/title, xpath: //android.widget.TextView[@resource-id="android:id/title" and @text="Airplane mode"], click

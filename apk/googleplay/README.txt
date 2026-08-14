@@ -1,0 +1,1 @@
+adb install-multiple base_0.apk split_config.en.apk split_config.x86_64.apk split_phonesky_data_loader.apk split_phonesky_data_loader.config.x86_64.apk split_phonesky_webrtc_native_lib.apk split_phonesky_webrtc_native_lib.config.x86_64.apk

@@ -1,0 +1,12 @@
+appPackage: com.yelp.android
+appActivity: com.yelp.android.nearby.ui.ActivityNearby
+---
+1. (action) resource-id: com.yelp.android:id/search_text, xpath: //android.widget.EditText[@resource-id="com.yelp.android:id/search_text"], click
+2. (action) resource-id: com.yelp.android:id/searchbar, xpath: //android.widget.EditText[@resource-id="com.yelp.android:id/searchbar"], send_keys_and_enter, Salad
+3. (action) resource-id: com.yelp.android:id/business_name, xpath: //android.widget.TextView[@resource-id="com.yelp.android:id/business_name" and @text="The Good Salad"], click
+4. (action) resource-id: com.yelp.android:id/share, xpath: //android.widget.TextView[@content-desc="Share"], click
+5. (action) resource-id: com.yelp.android:id/label, xpath: //android.widget.TextView[@resource-id="com.yelp.android:id/label" and @text="Signal"], click
+6. (assertion) check_current_app_package('org.thoughtcrime.securesms')
+7. (action) resource-id: org.thoughtcrime.securesms:id/name, xpath: (//android.widget.TextView[@resource-id="org.thoughtcrime.securesms:id/name"])[2], click
+8. (action) resource-id: , xpath: //android.widget.FrameLayout[@resource-id="org.thoughtcrime.securesms:id/fragment_container_wrapper"]/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[2]/android.widget.Button, click
+9. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.EditText[@content-desc="Message composition"]'); assert elem.is_displayed()

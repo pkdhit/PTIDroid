@@ -1,0 +1,7 @@
+appPackage: org.thoughtcrime.securesms
+appActivity: org.thoughtcrime.securesms.RoutingActivityAltWhite
+---
+1. (action) resource-id: , xpath: //androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.widget.Button, click
+2. (action) resource-id: , xpath: //android.widget.EditText, send_keys_and_hide_keyboard, anonymous-phonenumber
+3. (action) resource-id: org.thoughtcrime.securesms:id/name, xpath: //android.widget.TextView[@resource-id="org.thoughtcrime.securesms:id/name"], click
+4. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@resource-id="org.thoughtcrime.securesms:id/title"]'); assert elem.text == 'John Smith'

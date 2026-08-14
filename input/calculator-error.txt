@@ -1,0 +1,7 @@
+appPackage: com.miui.calculator
+appActivity: com.miui.calculator.cal.CalculatorActivity
+TaskDescription: Perform an incorrect division by zero calculation and check whether the interface displays "Can't divide by zero".
+---
+1. (action) resource-id: com.miui.calculator:id/btn_9_s, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/btn_9_s"], click
+2. (action) resource-id: com.miui.calculator:id/btn_div_s, xpath: //android.widget.ImageView[@content-desc="divide"], click
+3. (action) resource-id: com.miui.calculator:id/btn_0_s, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/btn_0_s"], click

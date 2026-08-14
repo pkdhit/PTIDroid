@@ -1,0 +1,8 @@
+appPackage: org.mozilla.focus
+appActivity: org.mozilla.focus.activity.MainActivity
+TaskDescription: Open the settings interface and adjust the application to the dark mode.
+---
+1. (action) resource-id: org.mozilla.focus:id/icon, xpath: //*[@class='android.widget.ImageView' and @resource-id='org.mozilla.focus:id/icon'], click
+2. (action) resource-id: org.mozilla.focus:id/text, xpath: //*[@class='android.widget.TextView' and @resource-id='org.mozilla.focus:id/text' and @text='Settings'], click
+3. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='General'], click
+4. (action) resource-id: org.mozilla.focus:id/title, xpath: //*[@class='android.widget.TextView' and @resource-id='org.mozilla.focus:id/title' and @text='Dark'], click

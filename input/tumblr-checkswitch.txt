@@ -1,0 +1,7 @@
+appPackage: com.tumblr
+appActivity: com.tumblr.ui.activity.RootActivity
+TaskDescription: Open the account interface and then click "Allow anonymous asks". Then check if "Allow anonymous asks" is selected.
+---
+1. (action) resource-id: com.tumblr:id/topnav_account_button_img_active, xpath: //android.widget.ImageButton[@content-desc="ACCOUNT"], click
+2. (action) resource-id: com.tumblr:id/action_blog_options, xpath: //android.widget.Button[@content-desc="Account"], click
+3. (action) resource-id: com.tumblr:id/toggle_row_text, xpath: //android.widget.TextView[@resource-id="com.tumblr:id/toggle_row_text" and @text="Allow anonymous asks"], click

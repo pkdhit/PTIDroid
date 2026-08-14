@@ -1,0 +1,7 @@
+appPackage: com.google.android.apps.tasks
+appActivity: com.google.android.apps.tasks.ui.TaskListsActivity
+TaskDescription: Add a "Study English" task, and then check if there is a "Study English" task on the interface.
+---
+1. (action) resource-id: com.google.android.apps.tasks:id/tasks_fab, xpath: //com.google.android.material.floatingactionbutton.FloatingActionButton[@content-desc="Create new task"], click
+2. (action) resource-id: com.google.android.apps.tasks:id/add_task_title, xpath: //android.widget.EditText[@resource-id="com.google.android.apps.tasks:id/add_task_title"], send_keys_and_hide_keyboard, Study English
+3. (action) resource-id: com.google.android.apps.tasks:id/add_task_done, xpath: //android.widget.Button[@resource-id="com.google.android.apps.tasks:id/add_task_done"], click

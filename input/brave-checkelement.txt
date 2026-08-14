@@ -1,0 +1,5 @@
+appPackage: com.brave.browser
+appActivity: com.google.android.apps.chrome.Main
+TaskDescription: Open the software menu, a control called Bookmarks appears on the interface.
+---
+1. (action) resource-id: com.brave.browser:id/menu_button, xpath: //android.widget.ImageButton[@resource-id="com.brave.browser:id/menu_button"], click

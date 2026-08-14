@@ -1,0 +1,8 @@
+appPackage: io.element.android.x
+appActivity: io.element.android.x.MainActivity
+---
+1. (action) resource-id: home_screen-settings, xpath: //*[@resource-id='home_screen-settings'], click
+2. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='Advanced settings'], click
+3. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='Light'], click
+4. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='Dark'], click
+5. (assertion) check_dark_mode(android:id/content)

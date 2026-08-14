@@ -1,0 +1,9 @@
+appPackage: com.google.android.youtube
+appActivity: com.google.android.youtube.app.honeycomb.Shell$HomeActivity
+---
+1. (action) resource-id: , xpath: //*[@class='android.widget.Button' and @content-desc = 'Shorts'], click
+2. (action) resource-id: , xpath: //*[@class='android.view.ViewGroup' and @content-desc = 'Share this video'], click
+3. (action) resource-id: , xpath: //*[@class='android.view.ViewGroup' and @content-desc = 'More'], click
+4. (action) resource-id: android:id/text1, xpath: //*[@resource-id='android:id/text1' and @text = 'K-9 Mail'], click
+5. (assertion) check_current_app_package('com.fsck.k9')
+6. (assertion) elem = driver.find_element(By.ID, 'com.fsck.k9:id/message_content'); assert elem.is_displayed()

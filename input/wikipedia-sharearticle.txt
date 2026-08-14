@@ -1,0 +1,10 @@
+appPackage: org.wikipedia
+appActivity: org.wikipedia.DefaultIcon
+TaskDescription: Enter "football" in the search box and perform the search. Then click on the article corresponding to "Football" and share it with your Signal friends.
+---
+1. (action) resource-id: org.wikipedia:id/search_text_view, xpath: //android.widget.TextView[@resource-id="org.wikipedia:id/search_text_view"], click
+2. (action) resource-id: org.wikipedia:id/search_src_text, xpath: //android.widget.AutoCompleteTextView[@resource-id="org.wikipedia:id/search_src_text"], send_keys_and_enter, football
+3. (action) resource-id: , xpath: //android.widget.TextView[@text="Football"], click
+4. (action) resource-id: org.wikipedia:id/page_toolbar_button_show_overflow_menu, xpath: //android.widget.ImageView[@content-desc="More options"], click
+5. (action) resource-id: org.wikipedia:id/page_share, xpath: //android.widget.TextView[@resource-id="org.wikipedia:id/page_share"], click
+6. (action) resource-id: android:id/text1, xpath: //android.widget.TextView[@resource-id="android:id/text1" and @text="John Smith"], click

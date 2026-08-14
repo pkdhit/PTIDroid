@@ -1,0 +1,6 @@
+appPackage: com.google.android.deskclock
+appActivity: com.android.deskclock.DeskClock
+TaskDescription: Open the settings interface and check if there is a control labeled "Volume buttons" on the interface.
+---
+1. (action) resource-id: com.google.android.deskclock:id/overflow_action_button, xpath: //android.widget.ImageView[@content-desc="More options"], click
+2. (action) resource-id: com.google.android.deskclock:id/title, xpath: //android.widget.TextView[@resource-id="com.google.android.deskclock:id/title" and @text="Settings"], click

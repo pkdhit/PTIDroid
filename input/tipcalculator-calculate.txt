@@ -1,0 +1,8 @@
+appPackage: com.jpstudiosonline.tipcalculator
+appActivity: com.jpstudiosonline.tipcalculator.MainActivity
+TaskDescription: Execute a tip calculator test, enter 3 persons, 15% tip, and 45 billtotal, then calculate and verify that personpay is '$ 17.25'.
+---
+1. (action) resource-id: com.jpstudiosonline.tipcalculator:id/etPerson, xpath: //*[@resource-id='com.jpstudiosonline.tipcalculator:id/etPerson'], send_keys_and_hide_keyboard, 3
+2. (action) resource-id: com.jpstudiosonline.tipcalculator:id/etTipAmount, xpath: //*[@resource-id='com.jpstudiosonline.tipcalculator:id/etTipAmount'], send_keys_and_hide_keyboard, 15
+3. (action) resource-id: com.jpstudiosonline.tipcalculator:id/etBillTotal, xpath: //*[@resource-id='com.jpstudiosonline.tipcalculator:id/etBillTotal'], send_keys_and_hide_keyboard, 45
+4. (action) resource-id: com.jpstudiosonline.tipcalculator:id/btCalculate, xpath: //*[@resource-id='com.jpstudiosonline.tipcalculator:id/btCalculate'], click

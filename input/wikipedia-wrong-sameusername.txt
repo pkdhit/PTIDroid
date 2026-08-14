@@ -1,0 +1,7 @@
+appPackage: org.wikipedia
+appActivity: org.wikipedia.DefaultIcon
+TaskDescription: Enter the registration interface and input the wrong username "Aurora". Then the application will give you a warning. 
+---
+1. (action) resource-id: org.wikipedia:id/navigation_bar_item_icon_view, xpath: (//android.widget.ImageView[@resource-id="org.wikipedia:id/navigation_bar_item_icon_view"])[5], click
+2. (action) resource-id: org.wikipedia:id/main_drawer_login_button, xpath: //android.widget.TextView[@resource-id="org.wikipedia:id/main_drawer_login_button"], click
+3. (action) resource-id: , xpath: //android.widget.EditText[@text="Username"], send_keys_and_hide_keyboard, Aurora

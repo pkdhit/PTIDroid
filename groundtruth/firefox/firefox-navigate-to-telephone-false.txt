@@ -1,0 +1,6 @@
+appPackage: org.mozilla.focus
+appActivity: org.mozilla.focus.activity.MainActivity
+---
+1. (action) resource-id: org.mozilla.focus:id/mozac_browser_toolbar_edit_url_view, xpath: //*[@resource-id='org.mozilla.focus:id/mozac_browser_toolbar_edit_url_view'], click
+2. (action) resource-id: org.mozilla.focus:id/mozac_browser_toolbar_edit_url_view, xpath: //*[@resource-id='org.mozilla.focus:id/mozac_browser_toolbar_edit_url_view'], send_keys_and_enter, tel:#12345678
+3. (assertion) assertion_elems = driver.find_elements(By.ID, 'org.mozilla.focus_id_alertTitle'); assert len(elems) == 0

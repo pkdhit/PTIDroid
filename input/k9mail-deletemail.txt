@@ -1,0 +1,6 @@
+appPackage: com.fsck.k9
+appActivity: com.fsck.k9.activity.MessageHomeActivity
+TaskDescription: Delete the "Automated Software Engineering" email.
+---
+1. (action) resource-id: com.fsck.k9:id/subject, xpath: //*[@resource-id='com.fsck.k9:id/subject' and @text='Automated Software Engineering'], long_click
+2. (action) resource-id: com.fsck.k9:id/delete, xpath: //*[@resource-id='com.fsck.k9:id/delete'], click

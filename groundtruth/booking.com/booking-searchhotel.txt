@@ -1,0 +1,17 @@
+appPackage: com.booking
+appActivity: com.booking.appindex.presentation.activity.SearchActivity
+---
+1. (action) resource-id: stays-destination, xpath: //android.view.View[@content-desc="Around current location"], click
+2. (action) resource-id: , xpath: //android.widget.EditText, send_keys_and_hide_keyboard, New York
+3. (action) resource-id: , xpath: (//android.widget.TextView[@text="New York"])[1], click
+4. (action) resource-id: stays-dates, xpath: //android.view.View[@content-desc="Staying from Thu, Jul 09 until Fri, Jul 10"], click
+5. (action) resource-id: , xpath: //android.view.View[@content-desc="August 2026"]/android.view.View[1]/android.view.View/android.widget.Button, click
+6. (action) resource-id: , xpath: //android.view.View[@content-desc="August 2026"]/android.view.View[5]/android.view.View/android.widget.Button, click
+7. (action) resource-id: com.booking:id/facet_date_picker_confirm, xpath: //android.widget.Button[@resource-id="com.booking:id/facet_date_picker_confirm"], click
+8. (action) resource-id: stays-occupancy, xpath: //android.view.View[@content-desc="1 room, 1 adult, 0 children"], click
+9. (action) resource-id: , xpath: //android.view.View[@content-desc="Increase Rooms"], click
+10. (action) resource-id: , xpath: //android.view.View[@content-desc="Increase Adults"], click
+11. (action) resource-id: , xpath: //android.view.View[@content-desc="Increase Adults"], click
+12. (action) resource-id: , xpath: //android.view.View[@resource-id="pp_occupancy_apply_cta"]/android.widget.Button, click
+13. (action) resource-id: , xpath: //android.view.View[@resource-id="search_box_cta_test_tag"]/android.widget.Button, click
+14. (assertion) elem = driver.find_element(By.XPATH, '//android.view.View[@resource-id="sr_list"]'); assert elem.is_displayed()

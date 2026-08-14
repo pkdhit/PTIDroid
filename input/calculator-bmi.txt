@@ -1,0 +1,14 @@
+appPackage: com.miui.calculator
+appActivity: com.miui.calculator.cal.CalculatorActivity
+TaskDescription: Calculate the BMI index，and the result is 22.1.
+---
+1. (action) resource-id: com.miui.calculator:id/iv_tab_life, xpath: //android.widget.ImageView[@resource-id="com.miui.calculator:id/iv_tab_life"], click
+2. (action) resource-id: com.miui.calculator:id/txv_title, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/txv_title" and @text="BMI"], click
+3. (action) resource-id: com.miui.calculator:id/tv_value_weight, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/tv_value_weight"], click
+4. (action) resource-id: com.miui.calculator:id/btn_6, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/btn_6"], click
+5. (action) resource-id: com.miui.calculator:id/btn_1, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/btn_1"], click
+6. (action) resource-id: com.miui.calculator:id/tv_value_height, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/tv_value_height"], click
+7. (action) resource-id: com.miui.calculator:id/btn_1, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/btn_1"], click
+8. (action) resource-id: com.miui.calculator:id/btn_6, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/btn_6"], click
+9. (action) resource-id: com.miui.calculator:id/btn_6, xpath: //android.widget.TextView[@resource-id="com.miui.calculator:id/btn_6"], click
+10. (action) resource-id: com.miui.calculator:id/btn_go, xpath: //android.widget.ImageView[@resource-id="com.miui.calculator:id/btn_go"], click

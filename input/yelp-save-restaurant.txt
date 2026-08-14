@@ -1,0 +1,9 @@
+appPackage: com.yelp.android
+appActivity: com.yelp.android.nearby.ui.ActivityNearby
+TaskDescription: Enter "Salad" in the search box and perform the search. Then click on the restaurant "The Good Salad". Next, add this restaurant to your savelist. Finally, check if the 'Added to "Want to go"' field appears on the interface.
+---
+1. (action) resource-id: com.yelp.android:id/search_text, xpath: //android.widget.EditText[@resource-id="com.yelp.android:id/search_text"], click
+2. (action) resource-id: com.yelp.android:id/searchbar, xpath: //android.widget.EditText[@resource-id="com.yelp.android:id/searchbar"], send_keys_and_enter, Salad
+3. (action) resource-id: com.yelp.android:id/business_name, xpath: //android.widget.TextView[@resource-id="com.yelp.android:id/business_name" and @text="The Good Salad"], click
+4. (action) resource-id: com.yelp.android:id/label, xpath: //android.widget.TextView[@resource-id="com.yelp.android:id/label" and @text="Save"], click
+5. (action) resource-id: com.yelp.android:id/collection_name, xpath: //android.widget.TextView[@resource-id="com.yelp.android:id/collection_name"], click

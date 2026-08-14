@@ -1,0 +1,5 @@
+appPackage: com.android.settings
+appActivity: com.android.settings.Settings
+TaskDescription: Open the battery display interface, and verify that the battery usage summary text is displayed on the screen.
+---
+1. (action) resource-id: android:id/title, xpath: //android.widget.TextView[@resource-id="android:id/title" and @text="Battery"], click

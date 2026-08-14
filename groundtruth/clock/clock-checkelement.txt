@@ -1,0 +1,6 @@
+appPackage: com.google.android.deskclock
+appActivity: com.android.deskclock.DeskClock
+---
+1. (action) resource-id: com.google.android.deskclock:id/overflow_action_button, xpath: //android.widget.ImageView[@content-desc="More options"], click
+2. (action) resource-id: com.google.android.deskclock:id/title, xpath: //android.widget.TextView[@resource-id="com.google.android.deskclock:id/title" and @text="Settings"], click
+3. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@resource-id="android:id/title" and @text="Volume buttons"]'); assert elem.is_displayed()

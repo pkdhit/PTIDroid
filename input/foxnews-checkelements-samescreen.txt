@@ -1,0 +1,7 @@
+appPackage: com.foxnews.android
+appActivity: com.foxnews.android.corenav.StartActivity
+TaskDescription: Open the settings mode interface and check if there are controls named "System Default", "Light" and "Dark" on the same screen.
+---
+1. (action) resource-id: com.foxnews.android:id/forYouFragment, xpath: //android.widget.FrameLayout[@content-desc="Profile"], click
+2. (action) resource-id: com.foxnews.android:id/app_pref_settings, xpath: //android.widget.TextView[@resource-id="com.foxnews.android:id/app_pref_settings"], click
+3. (action) resource-id: com.foxnews.android:id/display_opt_text, xpath: //android.widget.TextView[@resource-id="com.foxnews.android:id/display_opt_text"], click

@@ -1,0 +1,6 @@
+appPackage: com.fsck.k9
+appActivity: com.fsck.k9.activity.MessageHomeActivity
+---
+1. (action) resource-id: com.fsck.k9:id/subject, xpath: //*[@resource-id='com.fsck.k9:id/subject' and @text='Automated Software Engineering'], long_click
+2. (action) resource-id: com.fsck.k9:id/delete, xpath: //*[@resource-id='com.fsck.k9:id/delete'], click
+3. (assertion) elems = driver.find_elements(By.XPATH, "//*[@resource-id='android:id/content' and @text='Automated Software Engineering']"); assert len(elems) == 0

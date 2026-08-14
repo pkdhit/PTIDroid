@@ -1,0 +1,7 @@
+appPackage: org.mozilla.focus
+appActivity: org.mozilla.focus.activity.MainActivity
+TaskDescription: Enter the phone number "tel:12345678" into the search box and perform a search, then check whether it redirects to the Phone app and if the input field displays "1 (234) 567-8".
+---
+1. (action) resource-id: org.mozilla.focus:id/mozac_browser_toolbar_edit_url_view, xpath: //*[@resource-id='org.mozilla.focus:id/mozac_browser_toolbar_edit_url_view'], click
+2. (action) resource-id: org.mozilla.focus:id/mozac_browser_toolbar_edit_url_view, xpath: //*[@resource-id='org.mozilla.focus:id/mozac_browser_toolbar_edit_url_view'], send_keys_and_enter, tel:12345678
+3. (action) resource-id: android:id/button1, xpath: //*[@resource-id='android:id/button1' and @text='OPEN'], click

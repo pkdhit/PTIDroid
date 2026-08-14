@@ -1,0 +1,10 @@
+appPackage: org.thoughtcrime.securesms
+appActivity: org.thoughtcrime.securesms.RoutingActivityAltWhite
+TaskDescription: Search for the user whose mobile phone number is anonymous_phonenumber. Then you will see the target user John Smith and choose it. Next, share the user a URL of "https://mozilla.org". Then click on the URL to see the mozilla webpage
+---
+1. (action) resource-id: , xpath: //androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[2]/android.view.View[2]/android.widget.Button, click
+2. (action) resource-id: , xpath: //android.widget.EditText, send_keys_and_hide_keyboard, anonymous_phonenumber
+3. (action) resource-id: org.thoughtcrime.securesms:id/name, xpath: //android.widget.TextView[@resource-id="org.thoughtcrime.securesms:id/name"], click
+4. (action) resource-id: org.thoughtcrime.securesms:id/embedded_text_editor, xpath: //android.widget.EditText[@content-desc="Message composition"], send_keys_and_hide_keyboard, https://mozilla.org
+5. (action) resource-id: org.thoughtcrime.securesms:id/send_button, xpath: //android.widget.ImageButton[@content-desc="Send message"], click
+6. (action) resource-id: , xpath: , click_by_text, https://mozilla.org

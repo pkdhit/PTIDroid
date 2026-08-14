@@ -1,0 +1,8 @@
+appPackage: io.element.android.x
+appActivity: io.element.android.x.MainActivity
+---
+1. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='1'], click
+2. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='2'], click
+3. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='3'], click
+4. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='4'], click
+5. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@text="Wrong PIN. You have 2 more chances"]'); assert elem.text == 'Wrong PIN. You have 2 more chances'

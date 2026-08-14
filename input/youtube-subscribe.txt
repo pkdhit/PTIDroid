@@ -1,0 +1,7 @@
+appPackage: com.google.android.youtube
+appActivity: com.google.android.youtube.app.honeycomb.Shell$HomeActivity
+TaskDescription: Click on the search box and search for "bbc news", then click on 'Subscribe to BBC News.' , then see if you have subscribed BBC News.
+---
+1. (action) resource-id: com.google.android.youtube:id/menu_item_view, xpath: //*[@resource-id='com.google.android.youtube:id/menu_item_view' and @content-desc = 'Search'], click
+2. (action) resource-id: com.google.android.youtube:id/search_edit_text, xpath: //*[@resource-id='com.google.android.youtube:id/search_edit_text'], send_keys_and_enter, bbc news
+3. (action) resource-id: , xpath: //*[@class='android.view.ViewGroup' and @content-desc = 'Subscribe to BBC News.'], click

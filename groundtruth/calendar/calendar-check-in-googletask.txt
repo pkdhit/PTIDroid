@@ -1,0 +1,8 @@
+appPackage: com.google.android.calendar
+appActivity: com.google.android.calendar.AllInOneCalendarActivity
+---
+1. (action) resource-id: , xpath: //android.view.View[@content-desc="Task: study English, All day: , anonymous-email"], click
+2. (action) resource-id: , xpath: //android.widget.ImageView[@content-desc="More options"], click
+3. (action) resource-id: com.google.android.calendar:id/title, xpath: //android.widget.TextView[@resource-id="com.google.android.calendar:id/title" and @text="View in Tasks"], click
+4. (assertion) check_current_app_package('com.google.android.apps.tasks')
+5. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.EditText[@resource-id="com.google.android.apps.tasks:id/edit_title"]'); assert elem.text == 'study English'

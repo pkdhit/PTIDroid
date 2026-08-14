@@ -1,0 +1,7 @@
+appPackage: com.brave.browser
+appActivity: com.google.android.apps.chrome.Main
+TaskDescription: Search the URL https://www.youtube.com/, then add a bookmark to the URL. After completing this function, check whether a pop-up with the content "Bookmark saved" appears.
+---
+1. (action) resource-id: com.brave.browser:id/url_bar, xpath: //android.widget.EditText[@resource-id="com.brave.browser:id/url_bar"], click
+2. (action) resource-id: com.brave.browser:id/url_bar, xpath: //android.widget.EditText[@resource-id="com.brave.browser:id/url_bar"], send_keys_and_enter, https://www.youtube.com/
+3. (action) resource-id: com.brave.browser:id/bottom_bookmark_button, xpath: //android.widget.ImageButton[@content-desc="Bookmark this page"], click

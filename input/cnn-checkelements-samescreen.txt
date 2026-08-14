@@ -1,0 +1,6 @@
+appPackage: com.cnn.mobile.android.phone
+appActivity: com.cnn.mobile.android.phone.features.main.MainActivity
+TaskDescription: Open the settings interface and check if the "Breaking News" and "What's Hot" controls are on the same screen.
+---
+1. (action) resource-id: , xpath: , click_by_text, Settings
+2. (action) resource-id: com.cnn.mobile.android.phone:id/breakingNewsButton, xpath: //android.widget.Button[@resource-id="com.cnn.mobile.android.phone:id/breakingNewsButton"], click

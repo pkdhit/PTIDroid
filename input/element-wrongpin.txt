@@ -1,0 +1,8 @@
+appPackage: io.element.android.x
+appActivity: io.element.android.x.MainActivity
+TaskDescription: Start the application and enter "1234" as the incorrect password. A warning appears on the interface.
+---
+1. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='1'], click
+2. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='2'], click
+3. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='3'], click
+4. (action) resource-id: , xpath: //*[@class='android.widget.TextView' and @text='4'], click

@@ -1,0 +1,9 @@
+appPackage: com.spotify.music
+appActivity: com.spotify.music.MainActivity
+---
+1. (action) resource-id: , xpath: //android.view.ViewGroup[@resource-id="com.spotify.music:id/navigation_bar"]/android.view.View/android.view.View[2]/android.view.View[2], click
+2. (action) resource-id: , xpath: //android.widget.TextView[@text="What do you want to listen to?"], click
+3. (action) resource-id: , xpath: //android.widget.EditText, send_keys_and_enter, attention
+4. (action) resource-id: com.spotify.music:id/row_root, xpath: (//android.view.ViewGroup[@resource-id="com.spotify.music:id/row_root"])[1], click
+5. (action) resource-id: com.spotify.music:id/track_info_view_title, xpath: //android.widget.TextView[@content-desc="Attention"], click
+6. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@resource-id="com.spotify.music:id/context_header_subtitle"]'); assert elem.text == '"attention" in Search'

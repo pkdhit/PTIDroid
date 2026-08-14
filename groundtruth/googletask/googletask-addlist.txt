@@ -1,0 +1,7 @@
+appPackage: com.google.android.apps.tasks
+appActivity: com.google.android.apps.tasks.ui.TaskListsActivity
+---
+1. (action) resource-id: com.google.android.apps.tasks:id/list_creation_tab, xpath: //android.widget.LinearLayout[@content-desc="New list"], click
+2. (action) resource-id: com.google.android.apps.tasks:id/edit_list_title, xpath: //android.widget.EditText[@resource-id="com.google.android.apps.tasks:id/edit_list_title"], send_keys_and_hide_keyboard, simple list
+3. (action) resource-id: com.google.android.apps.tasks:id/done_button, xpath: //android.widget.TextView[@resource-id="com.google.android.apps.tasks:id/done_button"], click
+4. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@resource-id="com.google.android.apps.tasks:id/task_list_title"]'); assert elem.text == 'simple list'

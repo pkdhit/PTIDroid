@@ -1,0 +1,5 @@
+appPackage: com.spotify.music
+appActivity: com.spotify.music.MainActivity
+TaskDescription: Click on the search interface, and then check if there are two controls named "Made For You" and "Fresh Finds" on the interface.
+---
+1. (action) resource-id: , xpath: //android.view.ViewGroup[@resource-id="com.spotify.music:id/navigation_bar"]/android.view.View/android.view.View[2]/android.view.View[2], click

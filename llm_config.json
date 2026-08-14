@@ -1,0 +1,12 @@
+{
+  "ASSERTION": {
+    "base_url": "http://localhost:8001/v1",
+    "api_key": "local-dummy-key",
+    "model": "Qwen/Qwen3-VL-32B-Instruct"
+  },
+  "BASELINE": {
+    "base_url": "Your-base-url",
+    "api_key": "Your-api-key",
+    "model": "Your-model-name"
+  }
+}

@@ -1,0 +1,5 @@
+appPackage: com.brave.browser
+appActivity: com.google.android.apps.chrome.Main
+---
+1. (action) resource-id: com.brave.browser:id/menu_button, xpath: //android.widget.ImageButton[@resource-id="com.brave.browser:id/menu_button"], click
+2. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@resource-id="com.brave.browser:id/menu_item_text" and @text="Bookmarks"]'); assert elem.is_displayed()

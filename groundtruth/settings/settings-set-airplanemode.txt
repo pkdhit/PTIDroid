@@ -1,0 +1,6 @@
+appPackage: com.android.settings
+appActivity: com.android.settings.Settings
+---
+1. (action) resource-id: android:id/title, xpath: //android.widget.TextView[@resource-id="android:id/title" and @text="Network & internet"], click
+2. (action) resource-id: android:id/title, xpath: //android.widget.TextView[@resource-id="android:id/title" and @text="Airplane mode"], click
+3. (assertion) check_row_checked_by_text("Airplane mode")

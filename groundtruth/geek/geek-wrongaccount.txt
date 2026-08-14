@@ -1,0 +1,8 @@
+appPackage: com.contextlogic.geek
+appActivity: com.contextlogic.wish.activity.login.LoginActivity
+---
+1. (action) resource-id: com.contextlogic.geek:id/login_fragment_sign_in_button, xpath: //android.widget.TextView[@resource-id="com.contextlogic.geek:id/login_fragment_sign_in_button"], click
+2. (action) resource-id: com.contextlogic.geek:id/sign_in_fragment_email_text, xpath: //android.widget.AutoCompleteTextView[@resource-id="com.contextlogic.geek:id/sign_in_fragment_email_text"], send_keys_and_hide_keyboard, anonymous@mail.ru
+3. (action) resource-id: com.contextlogic.geek:id/sign_in_fragment_password_text, xpath: //android.widget.AutoCompleteTextView[@resource-id="com.contextlogic.geek:id/sign_in_fragment_password_text"], send_keys_and_hide_keyboard, 12345678
+4. (action) resource-id: com.contextlogic.geek:id/sign_in_fragment_sign_in_button, xpath: //android.widget.TextView[@resource-id="com.contextlogic.geek:id/sign_in_fragment_sign_in_button"], click
+5. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@resource-id="com.contextlogic.geek:id/multi_button_dialog_fragment_description"]'); assert elem.text == 'There was a problem authenticating your account'

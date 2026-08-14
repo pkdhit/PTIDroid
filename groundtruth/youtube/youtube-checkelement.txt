@@ -1,0 +1,6 @@
+appPackage: com.google.android.youtube
+appActivity: com.google.android.youtube.app.honeycomb.Shell$HomeActivity
+---
+1. (action) resource-id: com.google.android.youtube:id/pivot_bar_thumbnail, xpath: //*[@resource-id='com.google.android.youtube:id/pivot_bar_thumbnail'], click
+2. (action) resource-id: com.google.android.youtube:id/menu_item_view, xpath: //*[@resource-id='com.google.android.youtube:id/menu_item_view' and @content-desc = 'Settings'], click
+3. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@resource-id="android:id/title" and @text="Privacy"]'); assert elem.is_displayed()

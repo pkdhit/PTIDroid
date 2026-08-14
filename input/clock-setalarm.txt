@@ -1,0 +1,8 @@
+appPackage: com.google.android.deskclock
+appActivity: com.android.deskclock.DeskClock
+TaskDescription: Set the alarm for 6:00 PM, and then check if the 6:00 PM alarm you set appears on the interface.
+---
+1. (action) resource-id: com.google.android.deskclock:id/fab, xpath: //android.widget.Button[@content-desc="Add alarm"], click
+2. (action) resource-id: , xpath: //android.widget.TextView[@content-desc="6 o'clock"], click
+3. (action) resource-id: com.google.android.deskclock:id/material_clock_period_pm_button, xpath: //android.widget.RadioButton[@resource-id="com.google.android.deskclock:id/material_clock_period_pm_button"], click
+4. (action) resource-id: com.google.android.deskclock:id/material_timepicker_ok_button, xpath: //android.widget.Button[@resource-id="com.google.android.deskclock:id/material_timepicker_ok_button"], click

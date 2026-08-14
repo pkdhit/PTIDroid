@@ -1,0 +1,8 @@
+appPackage: com.rubenroy.minimaltodo
+appActivity: com.rubenroy.minimaltodo.MainActivity
+TaskDescription: Add a task named "Sample Todo", then check if there is a "Sample Todo" task on the interface. Next, delete the "Sample Todo" task and check if there is no "Sample Todo" task on the page.
+---
+1. (action) resource-id: com.rubenroy.minimaltodo:id/addToDoItemFAB, xpath: //*[@resource-id='com.rubenroy.minimaltodo:id/addToDoItemFAB'], click
+2. (action) resource-id: com.rubenroy.minimaltodo:id/userToDoEditText, xpath: //*[@resource-id='com.rubenroy.minimaltodo:id/userToDoEditText'], send_keys_and_hide_keyboard, Sample Todo
+3. (action) resource-id: com.rubenroy.minimaltodo:id/makeToDoFloatingActionButton, xpath: //*[@resource-id='com.rubenroy.minimaltodo:id/makeToDoFloatingActionButton'], click
+4. (action) resource-id: com.rubenroy.minimaltodo:id/toDoListItemTextview, xpath: //*[@resource-id='com.rubenroy.minimaltodo:id/toDoListItemTextview' and @text='Sample Todo'], swipe_right

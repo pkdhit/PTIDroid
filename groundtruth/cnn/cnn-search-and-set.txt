@@ -1,0 +1,9 @@
+appPackage: com.cnn.mobile.android.phone
+appActivity: com.cnn.mobile.android.phone.features.main.MainActivity
+---
+1. (action) resource-id: , xpath: //android.view.View[@content-desc="Search"], click
+2. (action) resource-id: , xpath: //android.widget.TextView[@text="Find it on CNN.."], click
+3. (action) resource-id: , xpath: //android.widget.EditText, send_keys_and_enter, football
+4. (action) resource-id: , xpath: //android.widget.FrameLayout[@resource-id="com.cnn.mobile.android.phone:id/single_fragment_frame"]/androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[4]/android.view.View/android.view.View[1], click
+5. (action) resource-id: , xpath: //android.widget.ImageView[@content-desc="Bookmark"], click
+6. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.ImageView[@content-desc="Bookmark Selected"]'); assert elem.is_displayed()

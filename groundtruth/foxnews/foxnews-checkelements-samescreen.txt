@@ -1,0 +1,7 @@
+appPackage: com.foxnews.android
+appActivity: com.foxnews.android.corenav.StartActivity
+---
+1. (action) resource-id: com.foxnews.android:id/forYouFragment, xpath: //android.widget.FrameLayout[@content-desc="Profile"], click
+2. (action) resource-id: com.foxnews.android:id/app_pref_settings, xpath: //android.widget.TextView[@resource-id="com.foxnews.android:id/app_pref_settings"], click
+3. (action) resource-id: com.foxnews.android:id/display_opt_text, xpath: //android.widget.TextView[@resource-id="com.foxnews.android:id/display_opt_text"], click
+4. (assertion) check_elements_same_screen(driver, ['//android.widget.RadioButton[@text="System Default"]', '//android.widget.RadioButton[@text="Light"]', '//android.widget.RadioButton[@text="Dark"]'])

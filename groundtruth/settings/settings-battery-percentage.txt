@@ -1,0 +1,5 @@
+appPackage: com.android.settings
+appActivity: com.android.settings.Settings
+---
+1. (action) resource-id: android:id/title, xpath: //android.widget.TextView[@resource-id="android:id/title" and @text="Battery"], click
+2. (assertion) elem = driver.find_element(By.XPATH, '//android.widget.TextView[@resource-id="com.android.settings:id/usage_summary"]'); assert elem.is_displayed()

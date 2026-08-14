@@ -1,0 +1,6 @@
+appPackage: org.thoughtcrime.securesms
+appActivity: org.thoughtcrime.securesms.RoutingActivityAltWhite
+TaskDescription: Open the account interface and then you will see a control labeled "Change phone number"
+---
+1. (action) resource-id: , xpath: //android.view.View[@content-desc="Settings shortcut"], click
+2. (action) resource-id: , xpath: //android.widget.TextView[@text="Account"], click
