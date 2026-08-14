@@ -41,9 +41,8 @@
   - `action_range`
   - `intent`
 - 规则：
-  - 如果 `TaskDescription` 中存在 `check/verify`，继续沿用静态子句拆分逻辑。
-  - 如果**没有** `check/verify`，则不再静态提取 `phase_intent`，改为把**类别名称 + TaskDescription + 动作序列**交给大语言模型划分阶段。
-  - 对于这类任务，提示 LLM **尽量只划分 1~2 个阶段**，不要拆得太细。
+  - 如果 `TaskDescription` 中存在检查关键词，继续沿用静态子句拆分逻辑。
+  - 如果**没有** 检查关键词，则不再静态提取 `phase_intent`，改为把**类别名称 + TaskDescription + 动作序列**交给大语言模型划分阶段。
 
 #### Control Selector
 - 输入：当前阶段的 `phase_intent`、当前 action 对应的截图与 XML 组件树。
@@ -142,7 +141,7 @@ Assertion Checker
 这是本机 PC 上的工作框架目录，核心文件如下：
 
 - `classifier.py`：断言类别分类器，输出 1~4 类。
-- `intent_planner.py`：阶段规划模块，负责把动作序列拆成 1~2 个逻辑阶段或按 check/verify/检查关键词 子句拆分。
+- `intent_planner.py`：阶段规划模块，负责把动作序列拆成 1~2 个逻辑阶段或按检查关键词子句拆分。
 - `control_selector.py`：组件筛选模块，负责静态召回与 LLM 兜底筛选。
 - `assertion_generator.py`：断言生成模块。
 - `assertion_checker.py`：断言校验。
@@ -419,8 +418,8 @@ AppTask-Assert Set 覆盖了多种常见的移动端断言场景，包括但不�
 
 1. **断言类别分类器只负责分类**：输出类别 1~4，不直接生成断言。
 2. **阶段规划区分两条路径**：
-   - 含 `check/verify`：可按检查子句拆阶段。
-   - 不含 `check/verify`：由 LLM 结合类别名、TaskDescription、动作序列划分 1~3 个阶段。
+   - 含检查关键词：可按检查子句拆阶段。
+   - 不含检查关键词：由 LLM 结合类别名、TaskDescription、动作序列划分 1~3 个阶段。
 3. **组件筛选层优先静态召回**：只有静态软匹配全 0 时才使用 LLM 兜底。
 4. **LLM 兜底必须先看截图**：筛组件时要先分析截图中的组件文本与大致位置，再结合 XML 候选组件做选择。
 5. **Assertion Generator 不承担筛选职责**：它只消费 `Control Selector` 给出的候选组件并生成断言。
@@ -436,6 +435,6 @@ AppTask-Assert Set 覆盖了多种常见的移动端断言场景，包括但不�
 
 - Appium 服务已启动。
 - PC 可访问服务器的 `base_url`。
-- 服务器端模型服务已成功加载 Qwen3-VL-32B-Instruct。
+- 服务器端模型服务已成功加载本地模型。
 - `openai` Python 包已安装。
 - 如果使用本地服务，`PTIDroid/llm_config.json` 中的地址、模型名与 API key 需要配置正确。
